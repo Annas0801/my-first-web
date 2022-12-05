@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+nav .logo{
+    width: 80px;
+    
+
+
+}
+nav ul li{
+    
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    
+    
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+
+    position: relative;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1;
+    transition: 0.5s;
+    padding: 20px 30px;
+}
+
+
+
+
+
+
+
+
+.content h1 a{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    
+}
+
+.content a:hover{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+
+
+
+
+
+
+
+
+.content a{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1;
+    transition: 0.5s;
+    padding: 20px 30px;
+    font-size: 1.5em;
+}
+.content a:hover{
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+.content a::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.content a span{
+    position: relative;
+    z-index: 1;
+}
+.content a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.content a i::before{
+    
+    content:'';
+    position:absolute;
+    border: 2px solid var(--clr);
+    width: 10px;
+    height: 5px;
+    left: 80%;
+    top: -3px;
+    background: #27282c;
+    transition: 0.5s;
+    transform: translateX(-50);
+}
+.content a:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+
+
+.content a i::after{
+    bottom: -3.5px;
+    content:'';
+    position:absolute;
+    border: 2px solid var(--clr);
+    width: 10px;
+    height: 5px;
+    left: 20%;
+    background: #27282c;
+    transition: 0.5s;
+    transform: translateX(-50);
+}
+.content a:hover i::after{
+    width: 20px;
+    left: 80%;
+}
+
+.vid{
+    position: absolute;
+    right: 100% ;
+    left: 0% ;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+    </style>
+    <meta name="viewport" content="widht=device-widht ,initial sacle=1.0"> 
+    <title>Annas RTF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <video autoplay loop muted plays-inline class="vid">
+            <source src="aset/genshin_overlay.mp4" type="video/mp4" >
+        </video>
+        <nav>
+            <img class="logo" src="aset/logo.png" class="logo">
+            <ul>
+                <li>
+                    <a
+                    href="https://skakgaming.com/"><span> HOME </span> <i></i>
+                    </a>
+                </li>
+
+                <li><a href="https://wa.me/6285764612458"> CONTACT </a></li>
+                <li><a href="https://skakgaming.com/"> MY BUSSINES </a></li>
+                <li><a href="https://www.w3schools.com">LEARNING SOURCE</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            
+            <a
+            href="https://skakgaming.com/" style="--clr: #1e9bff">
+            <span> MARI KUASAI DUNIA
+            </span>
+            <i>
+            </i>
+            </a>
+        </div> 
+        
+        
+        
+        <!--<video autoplay loop muted plays-inline>
+            <source src="aset/genshin_overlay.mp4" class="vid" >
+        </video>-->
+    </div>
+</body>
+
+</html>
+<!-- code -->
+
